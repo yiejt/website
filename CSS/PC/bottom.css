@@ -1,0 +1,7 @@
+bottom{
+    z-index:2;
+    height:75vh;
+    width:100%;
+    align-self: center;
+    background-color: #131b39;
+}

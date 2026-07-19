@@ -1,0 +1,138 @@
+main{
+    display:flex;
+    flex-direction:column;
+}
+
+.nav{
+    display:flex;
+    position:fixed;
+    z-index:3;
+    background-color:#131b39;
+    width:100%;
+    padding:1% 0
+}
+
+.home{
+    flex:1;
+}
+
+.home-icon{
+    text-decoration:none;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5em;
+    letter-spacing: 1px;
+    margin-left: 5%;
+}
+
+.nav-title{
+    flex:1;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about,
+.projects,
+.blog,
+.experience,
+.contact{
+    text-decoration: none;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition-duration: 0.3s;
+}
+
+.about:hover,
+.projects:hover,
+.blog:hover,
+.experience:hover,
+.contact:hover{
+    opacity:0.7
+}
+
+.background{
+    position:fixed;
+    z-index:1;
+    overflow: hidden;
+}
+
+.background-img{
+    width:100%;
+}
+
+.white-background{
+    z-index:2;
+    height:50vh;
+    width:95%;
+    margin-top:60vh;
+    align-self: center;
+    background-color: white;
+}
+
+.profile-img{
+    position:absolute;
+    margin-left:10%;
+    transform: translateY(-40vh);
+    scale:0.9
+}
+
+.background-word{
+    position: absolute;
+    margin-left:50%;
+    transform: translateY(-23vh);
+}
+
+.background-h{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:3em;
+    font-weight: bold;
+}
+
+.background-p{
+    margin-top:3%;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:1.5em;
+    letter-spacing: 0.1px;
+}
+
+.fa-brands{
+    margin:3% 5% 0 5%;
+    font-size:1.5em;
+    color:white;
+    transition-duration: 0.3s;
+}
+
+.fa-brands:hover{
+    scale:1.2
+}
+
+.background-des{
+    margin-top:5%;
+    width:80%;
+    color:black;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2em;
+}
+
+.about-me{
+    position:absolute;
+    margin-left:50%;
+    transform: translateY(23vh);
+    border:2px solid #131b39;
+    border-radius: 3%;
+    padding:0.5em 1em;
+    text-decoration: none;
+    font-size:1.5em;
+    color:#131b39;
+    background-color: white;
+    transition-duration: 0.3s;
+}
+
+.about-me:hover{
+    background-color: #131b39;
+    color:white
+}
