@@ -63,9 +63,9 @@ main{
 
 .white-background{
     z-index:2;
-    height:50vh;
-    width:95%;
-    margin-top:60vh;
+    height:70vh;
+    width:100%;
+    margin-top:50vh;
     align-self: center;
     background-color: white;
 }
@@ -80,7 +80,7 @@ main{
 .background-word{
     position: absolute;
     margin-left:50%;
-    transform: translateY(-23vh);
+    transform: translateY(-25vh);
 }
 
 .background-h{
@@ -99,7 +99,7 @@ main{
 }
 
 .fa-brands{
-    margin:3% 5% 0 5%;
+    margin:3% 2% 0 4%;
     font-size:1.5em;
     color:white;
     transition-duration: 0.3s;
@@ -115,13 +115,13 @@ main{
     color:black;
     font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 2em;
+    line-height: 1.5em;
+    text-align: justify;
 }
 
 .about-me{
     position:absolute;
-    margin-left:50%;
-    transform: translateY(23vh);
+    transform: translateY(5vh);
     border:2px solid #131b39;
     border-radius: 3%;
     padding:0.5em 1em;

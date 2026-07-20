@@ -1,0 +1,18 @@
+content{
+    display:flex;
+    flex-direction: column;
+    z-index:2;
+}
+
+.Projects{
+    height:100vh;
+    width:100%;
+    background-color: #727c9e;
+    padding:5%;
+}
+
+.Projects-h{
+    color:white;
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
