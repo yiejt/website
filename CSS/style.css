@@ -3,3 +3,8 @@
     padding: 0;
     /* border: 1px solid cyan; */
 }
+
+html{
+    scroll-behavior: smooth;
+}
+

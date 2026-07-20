@@ -6,7 +6,7 @@ main{
 .nav{
     display:flex;
     position:fixed;
-    z-index:3;
+    z-index:5;
     background-color:#131b39;
     width:100%;
     padding:1% 0
@@ -61,57 +61,102 @@ main{
     width:100%;
 }
 
-.white-background{
-    z-index:2;
-    height:70vh;
-    width:100%;
-    margin-top:50vh;
-    align-self: center;
-    background-color: white;
+.homepage-content{
+    z-index:4;
+    display:flex;
+    height:50vh;
+}
+
+.profile{
+    flex:1;
+    z-index:4;
+    padding-top:10vh;
+    scale:0.6;
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:0.3s;
 }
 
 .profile-img{
-    position:absolute;
-    margin-left:10%;
-    transform: translateY(-40vh);
-    scale:0.9
+    border-radius: 10%;
 }
 
 .background-word{
-    position: absolute;
-    margin-left:50%;
-    transform: translateY(-25vh);
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
 }
 
-.background-h{
+.background-word-h{
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:3em;
     font-weight: bold;
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:0.8s;
 }
 
-.background-p{
-    margin-top:3%;
+.background-word-p{
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:0.7s;
+
+    margin-top:3vh;
     color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:1.5em;
     letter-spacing: 0.1px;
 }
 
-.fa-brands{
-    margin:3% 2% 0 4%;
+.contact-icon{
+    display:flex;
+}
+
+.fa-brands,
+.fa-solid{
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:0.7s;
+
+    text-decoration: none;
+    margin:3vh 2vh 3vh 4vh;
     font-size:1.5em;
     color:white;
     transition-duration: 0.3s;
 }
 
-.fa-brands:hover{
+.fa-brands:hover,
+.fa-solid:hover{
     scale:1.2
 }
 
-.background-des{
-    margin-top:5%;
-    width:80%;
+.white-background{
+    z-index:3;
+    display:flex;
+    height:60vh;
+    background-color: white;
+    padding:0 5%;
+}
+
+.empty{
+    flex:1
+}
+
+.white-background-content{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+
+.white-background-content-p{
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:0.5s;
+
     color:black;
     font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -120,19 +165,36 @@ main{
 }
 
 .about-me{
-    position:absolute;
-    transform: translateY(5vh);
+    opacity:0;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay:1s;
+
+    width:20%;
+    text-align: center;
     border:2px solid #131b39;
     border-radius: 3%;
     padding:0.5em 1em;
     text-decoration: none;
     font-size:1.5em;
     color:#131b39;
+    
     background-color: white;
     transition-duration: 0.3s;
+
 }
 
 .about-me:hover{
     background-color: #131b39;
     color:white
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(5vh);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
