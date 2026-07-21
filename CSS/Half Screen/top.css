@@ -1,0 +1,103 @@
+@media (max-width:1000px){
+    .nav{
+        padding:20px 0
+    }
+
+    .home{
+        flex:1;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left:20px;
+    }
+
+    .alert-bar{
+        display:none
+    }
+
+    .nav-title{
+        display:none
+    }
+
+    .collapsed-nav{
+        flex:1;
+        display:flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .collapsed-red-dot{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        cursor:pointer;
+        margin-right:30px
+    }
+
+    .collapsed-red-dot-outer{
+        position:absolute;
+        font-size: 1em;
+        border:0.1em solid red;
+        border-radius: 50%;
+        height:1.5em;
+        width:1.5em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.3s;
+    }
+
+    .collapsed-red-dot-inner{
+        color:white;
+        font-size: 0.8em;
+        padding:0.2em;
+        background-color: red;
+        border-radius: 50%;
+        height:1em;
+        width:1em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        transition-duration: 0.3s;
+
+    }
+
+    .collapsed-red-dot:hover .collapsed-red-dot-outer{
+        border:0.1em solid rgb(122, 0, 0);
+    }
+
+    .collapsed-red-dot:hover .collapsed-red-dot-inner{
+        background-color:rgb(122, 0, 0);
+    }
+
+    .red-dot-content{
+        display:none;
+        position:absolute;
+    }
+
+    .red-dot-content.show{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:black;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        width:90%;
+        left:3%;
+        top:60px;
+        padding:10px;
+        border-radius:1cap;
+    }
+
+    .collapsed-nav-title{
+        margin-right:30px;
+        color:white;
+        cursor:pointer;
+        scale:1.2
+    }
+
+    .background-img{
+        height:50vh;
+    }
+}

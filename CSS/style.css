@@ -8,3 +8,37 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: black;
+}
+
+@media (max-width:600px){
+    body{
+    background-color: white;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(5vh);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition: all 0.8s ease;
+    transition-delay:0.2s;
+}
+
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
