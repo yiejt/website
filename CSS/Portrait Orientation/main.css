@@ -1,11 +1,11 @@
 @media (max-width:600px){
     .homepage-img{
         width:100%;
-        height:50%;
+        height:75%;
     }
 
     .profile{
-        padding-top: calc(var(--header-height) + 15%);
+        padding-top: calc(var(--header-height) + 40%);
     }
 
     .homepage-word0{
@@ -20,9 +20,9 @@
         position:relative;
         z-index:3;
 
-        transform: translateY(calc(-1 * var(--header-height)) + 15%);
+        transform: translateY(calc(var(--header-height)));
         height:fit-content;
-        padding-top:calc(var(--header-height));
+        padding-top:calc(var(--header-height) + 20%);
 
         background-color: white;
     }
