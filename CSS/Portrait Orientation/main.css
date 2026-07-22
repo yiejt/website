@@ -1,6 +1,7 @@
 @media (max-width:600px){
     .homepage-content{
-        min-height:50vh;
+        height:60vh;
+        min-height:60vh;
     }
 
     .homepage-img{
@@ -9,11 +10,11 @@
     }
 
     .profile{
-        padding-top: calc(var(--header-height) * 1);
+        padding-top: calc(var(--header-height) * 1.5);
     }
 
     .profile-img{
-        height:50vh;
+        height:60vh;
         width:fit-content
     }
 
@@ -30,7 +31,7 @@
         z-index:3;
 
         height:fit-content;
-        padding-top:calc(var(--header-height) * 1.5);
+        padding-top:calc(var(--header-height) * 2);
 
         background-color: white;
     }
