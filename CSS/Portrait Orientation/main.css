@@ -22,7 +22,7 @@
 
         transform: translateY(calc(var(--header-height)));
         height:fit-content;
-        padding-top:calc(var(--header-height) + 20%);
+        padding-top:calc(var(--header-height));
 
         background-color: white;
     }
