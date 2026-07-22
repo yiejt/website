@@ -1,7 +1,7 @@
 @media (max-width:600px){
     .homepage-content{
-        height:60vh;
-        min-height:60vh;
+        height:50vh;
+        min-height:50vh;
     }
 
     .homepage-img{
@@ -14,7 +14,7 @@
     }
 
     .profile-img{
-        height:60vh;
+        height:50vh;
         width:fit-content
     }
 
@@ -39,7 +39,7 @@
     .homepage-word-h{
         width:90%;
 
-        font-size:2rem;
+        font-size:2.5rem;
         color:black;
     }
 
