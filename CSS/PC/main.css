@@ -186,10 +186,11 @@ main{
 }
 
 .about-me{
-    width:20vh;
+    height:fit-content;
+    width:fit-content;
     border:2px solid #131b39;
     border-radius: 0.5cap;
-    padding:0.5rem 1rem;
+    padding:2% 4%;
     background-color: white;
 
     font-size:1.5rem;
@@ -208,15 +209,6 @@ main{
 .about-me:hover{
     background-color: #131b39;
     color:white
-}
-
-footer{
-    background-color: cyan;
-    width:100%;
-    height:300vh;
-    display:flex;
-    z-index:1;
-    position: relative;
 }
 
 

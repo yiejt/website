@@ -1,4 +1,8 @@
 @media (max-width:1000px){
+    .profile-img{
+        border-radius: 2cap;
+    }
+
     .media-icon{
         padding:5% 1%;
     }
