@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid cyan; */
+    margin:0;
+    padding:0;
+    /* border:1px solid cyan */
 }
 
 html{
@@ -10,12 +10,6 @@ html{
 
 body{
     background-color: black;
-}
-
-@media (max-width:600px){
-    body{
-    background-color: white;
-    }
 }
 
 @keyframes fadeIn{
@@ -41,4 +35,3 @@ body{
     opacity:1;
     transform:translateY(0);
 }
-

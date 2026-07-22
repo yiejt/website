@@ -1,0 +1,81 @@
+header{
+    display:flex;
+    position: fixed;
+    z-index:5;
+
+    padding:1% 0;
+
+    height:fit-content;
+    width:100%;
+
+    background-color:#131b39;
+}
+
+.home{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-icon{
+    text-decoration:none;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.5rem;
+}
+
+.alert-bar{
+    flex:4;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.red-dot{
+    height:0.5rem;
+    width:0.5rem;
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+.alert-bar-content{
+    margin-left:1vh;
+ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    color:white;
+    letter-spacing: 0.5px;
+}
+
+.nav{
+    flex:5;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about,
+.projects,
+.blog,
+.experience,
+.contact{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+
+    transition-duration: 0.3s;
+}
+
+.about:hover,
+.projects:hover,
+.blog:hover,
+.experience:hover,
+.contact:hover{
+    opacity:0.7
+}
+
+.collapsed-nav{
+    display:none
+}

@@ -4,69 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./CSS/style.css">
-
-    <link rel="stylesheet" href="./CSS/PC/top.css">
-    <link rel="stylesheet" href="./CSS/PC/content.css">
-    <link rel="stylesheet" href="./CSS/PC/bottom.css">
-
-    <link rel="stylesheet" href="./CSS/Half Screen/top.css">
-    <link rel="stylesheet" href="./CSS/Half Screen/content.css">
-    <link rel="stylesheet" href="./CSS/Half Screen/bottom.css">
-
-    <link rel="stylesheet" href="./CSS/Phone/top.css">
-    <link rel="stylesheet" href="./CSS/Phone/content.css">
-    <link rel="stylesheet" href="./CSS/Phone/bottom.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="stylesheet" href="./CSS/PC/header.css">
+    <link rel="stylesheet" href="./CSS/PC/main.css">
+
+    <link rel="stylesheet" href="./CSS/Landscape Orientation/header.css">
+    <link rel="stylesheet" href="./CSS/Landscape Orientation/main.css">
+
+    <link rel="stylesheet" href="./CSS/Portrait Orientation/header.css">
+    <link rel="stylesheet" href="./CSS/Portrait Orientation/main.css">
 
     <link rel="icon" href="./Pictures/website-icon.png">
-    <title>Yie JT</title>
-
-    <style>
-    </style>
+    <title>Yie Jin Tian</title>
 </head>
 <body>
     <header>
+        <section class="home">
+            <a href="https://yiejt.github.io/website/" class="home-icon">Yie JT</a>
+        </section>
+        <section class="alert-bar">
+            <div class="red-dot"></div>
+            <div class="alert-bar-content">This website was built from scratch using HTML, CSS, and JavaScript</div>
+        </section>
         <section class="nav">
-            <div class="home">
-                <a href="https://yiejt.github.io/website/" class="home-icon">Yie JT</a>
-            </div>
-            <div class="alert-bar">
-                <div class="red-dot"></div>
-                <div class="alert-bar-content">This website was built from scratch using HTML, CSS, and JavaScript.</div>
-            </div>
-            <div class="nav-title">
-                <a href="" class="about">About</a>
-                <a href="" class="projects">Projects</a>
-                <a href="" class="blog">Blog</a>
-                <a href="" class="experience">Experience</a>
-                <a href="" class="contact">Contact</a>
-            </div>
+            <a href="" class="about">About</a>
+            <a href="" class="projects">Projects</a>
+            <a href="" class="blog">Blog</a>
+            <a href="" class="experience">CV</a>
+            <a href="" class="contact">Contact</a>
+        </section>
 
-            <div class="collapsed-nav">
-                <div class="collapsed-red-dot">
-                    <div class="collapsed-red-dot-outer"></div>
-                    <div class="collapsed-red-dot-inner">1</div>
-                    <div class="red-dot-content">This website was built from scratch using HTML, CSS, and JavaScript.</div>
+        <section class="collapsed-nav">
+            <div class="collapsed-red-dot">
+                <div class="collapsed-red-dot-outer"></div>
+                <div class="collapsed-red-dot-inner">1</div>
+
+                <div class="triangle"></div>
+                <div class="red-dot-content">This website was built from scratch using HTML, CSS, and JavaScript</div>
+            </div>
+            
+            <div class="material-symbols-outlined burger">menu</div>
+            <div class="burger-nav">
+                <a href="" class="burger-nav-p">About</a>
+                <a href="" class="burger-nav-p">Projects</a>
+                <a href="" class="burger-nav-p">Blog</a>
+                <a href="" class="burger-nav-p">CV</a>
+                <a href="" class="burger-nav-p">Contact</a>
+
+            </div>
+        </section>
+    </header>
+    
+    <main>
+        <section class="homepage">
+            <div class="homepage-background">
+                <div class="homepage-img-dark-glass"></div>
+                <img class="homepage-img" src="./Pictures/homepage-background.jpg" alt="homepage-background-img">
+            </div>
+            <div class="homepage-content">
+                <div class="profile">
+                    <img src="./Pictures/profile-image.jpg" alt="profile-img" class="profile-img">
                 </div>
-                <span class="material-symbols-outlined collapsed-nav-title">menu</span>
-            </div>
-        </section>
-        <section class="background">
-            <img class="background-img" src="./Pictures/homepage-background.jpg">
-        </section>
-        <section class="homepage-content">
-            <div class="profile">
-                <img class="profile-img" src="./Pictures/profile-image.jpg">
-            </div>
-            <div class="background-word">
-                <div class="background-word-h">Yie Jin Tian</div>
-                <div class="background-word-p">BSc (Hons.) Biotechnology, University of Nottingham Malaysia</div>
+                <div class="homepage-word0">
+                    <div class="homepage-word-h">Yie Jin Tian</div>
+                    <div class="homepage-word-p">BSc (Hons.) Biotechnology, University of Nottingham Malaysia</div>
 
-                <div class="contact-icon">
+                    <div class="media-icon">
+                        <a href="https://www.linkedin.com/in/jin-tian-yie-7673b8349/" class="fa-brands fa-linkedin-in"></a>
+                        <a href="https://github.com/yiejt" class="fa-brands fa-github"></a>
+                        <a href="" class="fa-brands fa-x-twitter"></a>
+                        <a href="" class="fa-solid fa-envelope"></a>                
+                        <a href="" class="fa-brands fa-google-scholar"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homepage-word1">
+                <div class="homepage-word-h">Yie Jin Tian</div>
+                <div class="homepage-word-p">BSc (Hons.) Biotechnology, University of Nottingham Malaysia</div>
+
+                <div class="media-icon">
                     <a href="https://www.linkedin.com/in/jin-tian-yie-7673b8349/" class="fa-brands fa-linkedin-in"></a>
                     <a href="https://github.com/yiejt" class="fa-brands fa-github"></a>
                     <a href="" class="fa-brands fa-x-twitter"></a>
@@ -74,38 +97,23 @@
                     <a href="" class="fa-brands fa-google-scholar"></a>
                 </div>
             </div>
-        </section>
-
-        <section class="white-background">
-            <div class="empty"></div>
-
-            <div class="white-background-content">
-                <br>
-                <div class="white-background-content-p">Hi, I'm Jin Tian. I created this website as a place to document my academic journey, showcase personal projects, and share what I learn along the way. I am particularly interested in how biological innovation and artificial intelligence can be applied to address real-world challenges. Here, I share my projects, learning notes, and reflections on biotechnology, bioinformatics, protein science, and AI as I continue to learn and grow.</div>
-                <br>
-                <div class="white-background-content-p">I hope this website reflects not only what I have accomplished, but also what I continue to learn and explore.</div>
-                <br>
-                <br>
-                <a href="" class="about-me">About me</a>
+            <div class="description">
+                <div class="empty"></div>
+                <div class="description-content">
+                    <br>
+                    <div class="description-content-p">Hi, I'm Jin Tian. I created this website as a place to document my academic journey, showcase personal projects, and share what I learn along the way. I am particularly interested in how biological innovation and artificial intelligence can be applied to address real-world challenges. Here, I share my projects, learning notes, and reflections on biotechnology, bioinformatics, protein science, and AI as I continue to learn and grow.</div>
+                    <br>
+                    <div class="description-content-p">I hope this website reflects not only what I have accomplished, but also what I continue to learn and explore.</div>
+                    <br>
+                    <br>
+                    <a href="" class="about-me">About me</a>
+                </div>
             </div>
         </section>
-        <main>
-            <section class="Projects">
-                <div class="Projects-h reveal">Projects</div>
-            </section>
-        </main>
+    </main>
 
-        <footer id="bottom">
-            <section class="left">
-                <div class="left-h">Contact<br>Information</div>
-                <div class="left-p">Contact<br>Information</div>
-            </section>
-            <section class="right">
+    <footer></footer>
 
-            </section>
-        </footer>
-    </header>
-
-    <script src="./JavaScript/PC/top.js"></script>
+    <script src="./JavaScript/js.js"></script>
 </body>
 </html>
