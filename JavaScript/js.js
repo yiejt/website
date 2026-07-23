@@ -1,3 +1,31 @@
+//Developing
+const developingBox = document.getElementById("developingBox");
+const developingButtons = document.querySelectorAll(".developing");
+
+developingButtons.forEach(button => {
+    button.addEventListener("click", function(e){
+        e.preventDefault();
+
+        developingBox.classList.add("show");
+
+        setTimeout(()=>{
+            developingBox.classList.remove("show");
+        },3000);
+    });
+});
+
+
+//Contact Redirect
+document.querySelector(".contact").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.getElementById("footer").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+
+//Portrait Red-Dot
 const red_dot = document.querySelector(".collapsed-red-dot");
 const triangle = document.querySelector(".triangle");
 const red_dot_content = document.querySelector(".red-dot-content");
@@ -6,7 +34,6 @@ document.addEventListener("click", function(){
     triangle.classList.remove("show");
     red_dot_content.classList.remove("show");
 });
-
 
 red_dot.addEventListener("click", function(e){
     e.stopPropagation(); 
@@ -20,10 +47,12 @@ red_dot_content.addEventListener("click", function(e){
 triangle.addEventListener("click", function(e){
     e.stopPropagation(); 
 });
-//
 
+
+//Portrait Navigation Pane
 const burger = document.querySelector(".burger");
 const burger_content = document.querySelector(".burger-nav")
+const contact = document.querySelector(".Contact")
 
 burger.addEventListener("click", () => {
     burger.textContent =
@@ -35,8 +64,20 @@ burger.addEventListener("click", () => {
         burger_content.classList.add('show');
     }
 });
-//
 
+contact.addEventListener("click", () => {
+    burger.textContent =
+        burger.textContent === "menu" ? "close" : "menu";
+        
+    if (burger_content.classList.contains('show')) {
+        burger_content.classList.remove('show');
+    } else {
+        burger_content.classList.add('show');
+    }
+});
+
+
+//Header Height
 const header = document.querySelector("header");
 
 function updateHeaderHeight() {
@@ -53,8 +94,9 @@ function updateHeaderHeight() {
 updateHeaderHeight();
 
 window.addEventListener("resize", updateHeaderHeight);
-//
 
+
+//Homepage background scroll
 const homepageImg =
 document.querySelector(".homepage-img");
 
@@ -67,12 +109,13 @@ window.addEventListener("scroll",()=>{
     `translateY(${scroll * 0.5}px)`;
 
 });
-//
 
+
+//Content Appear Gradually
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("active");
+            entry.target.classList.add("show");
         }
     });
 }, {
@@ -82,6 +125,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach(element => {
     observer.observe(element);
 });
-//
 
+
+//Year
 document.getElementById("year").textContent = new Date().getFullYear();

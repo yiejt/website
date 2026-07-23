@@ -60,7 +60,7 @@ header{
 .projects,
 .blog,
 .research,
-.experience,
+.CV,
 .contact{
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,7 +73,7 @@ header{
 .projects:hover,
 .blog:hover,
 .research:hover,
-.experience:hover,
+.CV:hover,
 .contact:hover{
     opacity:0.7
 }
