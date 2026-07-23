@@ -16,7 +16,7 @@ developingButtons.forEach(button => {
 
 
 //Contact Redirect
-document.querySelector(".contact").addEventListener("click", function (e) {
+document.querySelector(".contact, .Contact").addEventListener("click", function (e) {
     e.preventDefault();
 
     document.getElementById("footer").scrollIntoView({
