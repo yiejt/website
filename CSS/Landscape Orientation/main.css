@@ -6,4 +6,11 @@
     .media-icon{
         padding:5% 1%;
     }
+
+    .Projects-h,
+    .Blog-h,
+    .Research-h{
+        font-size: 3rem;
+    }
+
 }

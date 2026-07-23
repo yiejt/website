@@ -76,4 +76,10 @@
     .description-content-p{
         width:90%;
     }
+
+    .Projects-h,
+    .Blog-h,
+    .Research-h{
+        font-size: 2rem;
+    }
 }

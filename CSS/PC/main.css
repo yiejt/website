@@ -54,8 +54,8 @@ main{
     display:flex;
 
     height:50vh;
-    min-height:400px;
     max-height:500px;
+    min-height:400px;
     width:100%;
 }
 
@@ -208,6 +208,63 @@ main{
     color:white
 }
 
+.Projects{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 
+    height:fit-content;
+    width:100%;
+    padding:5% 0;
+    background-color:#556087;
+}
 
+.Projects-h{
+    width:90%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color:white;
+}
+
+.Blog{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    height:fit-content;
+    width:100%;
+    padding:5% 0;
+    background-color:white;
+}
+
+.Blog-h{
+    width:90%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color:black;
+}
+
+.Research{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    height:fit-content;
+    width:100%;
+    padding:5% 0;
+    background-color:#556087;
+}
+
+.Research-h{
+    width:90%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color:white;
+}
 
