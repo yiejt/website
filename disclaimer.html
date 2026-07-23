@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="stylesheet" href="./CSS/PC/header.css">
+    <link rel="stylesheet" href="./CSS/PC/footer.css">
+
+    <link rel="stylesheet" href="./CSS/Landscape Orientation/header.css">
+
+    <link rel="stylesheet" href="./CSS/Portrait Orientation/header.css">
+    <link rel="stylesheet" href="./CSS/Portrait Orientation/footer.css">
+
+    <link rel="icon" href="./Pictures/website-icon.png">
+    <title>Yie Jin Tian</title>
+
+    <style>
+        main{
+            display:flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
+            height:fit-content;
+            width:100%;
+            padding:5% 0;
+            background-color: white;
+        }
+
+        .Disclaimer{
+            margin-top: calc(var(--header-height) * 1);
+            width:80%;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 4rem;
+            font-weight: bold;
+            color:black;
+
+            opacity:0;
+            animation: fadeIn 0.5s ease forwards;
+            animation-delay:0.3s;
+        }
+
+        .Disclaimer-h{
+            width:70%;
+            padding:1% 0 0;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color:black;
+
+            opacity:0;
+            animation: fadeIn 0.5s ease forwards;
+            animation-delay:0.7s;
+        }
+
+        .Disclaimer-p{
+            width:70%;
+            padding:1% 0 0;
+
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            text-align: justify;
+            color:black;
+
+            opacity:0;
+            animation: fadeIn 0.5s ease forwards;
+            animation-delay:0.5s;
+        }
+
+        @media (max-width:1000px){
+            .Disclaimer{
+                width:90%;
+
+                font-size: 2rem;
+            }
+
+            .Disclaimer-h{
+                width:90%;
+
+                font-size: 1.5rem;
+            }
+
+            .Disclaimer-p{
+                width:90%;
+
+                font-size: 1rem;
+            }   
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="home">
+            <a href="https://yiejt.github.io/website/" class="home-icon">Yie JT</a>
+        </section>
+        <section class="alert-bar">
+            <div class="red-dot"></div>
+            <div class="alert-bar-content">This website was built from scratch using HTML, CSS, and JavaScript</div>
+        </section>
+        <section class="nav">
+            <a href="" class="about">About</a>
+            <a href="" class="projects">Projects</a>
+            <a href="" class="blog">Blog</a>
+            <a href="" class="research">Research</a>
+            <a href="" class="experience">CV</a>
+            <a href="" class="contact">Contact</a>
+        </section>
+
+        <section class="collapsed-nav">
+            <div class="collapsed-red-dot">
+                <div class="collapsed-red-dot-outer"></div>
+                <div class="collapsed-red-dot-inner">1</div>
+
+                <div class="triangle"></div>
+                <div class="red-dot-content">This website was built from scratch using HTML, CSS, and JavaScript</div>
+            </div>
+            
+            <div class="material-symbols-outlined burger">menu</div>
+            <div class="burger-nav">
+                <a href="" class="burger-nav-p">About</a>
+                <a href="" class="burger-nav-p">Projects</a>
+                <a href="" class="burger-nav-p">Blog</a>
+                <a href="" class="burger-nav-p">Research</a>
+                <a href="" class="burger-nav-p">CV</a>
+                <a href="" class="burger-nav-p">Contact</a>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="Disclaimer">Disclaimer</div>
+        <br>
+        <br>
+        <div class="Disclaimer-h">A. Educational Purpose</div>
+        <div class="Disclaimer-p">The information provided on this website is intended for educational and informational purposes only. It reflects my personal learning journey, interests, and opinions.</div>
+        <br>
+        <br>
+        <div class="Disclaimer-h">B. Not professional advice</div>
+        <div class="Disclaimer-p">The content on this website does not constitute professional medical, scientific, legal, or financial advice. Readers should consult qualified professionals for specific advice.</div>
+        <br>
+        <br>
+        <div class="Disclaimer-h">C. Accuracy</div>
+        <div class="Disclaimer-p">While I make reasonable efforts to ensure that the information presented is accurate and up to date, I cannot guarantee that all information is complete, accurate, or error-free.</div>
+        <br>
+        <br>
+        <div class="Disclaimer-h">D. Personal opinions</div>
+        <div class="Disclaimer-p">The views and opinions expressed on this website are my own and do not represent the views of my university, employers, or any affiliated organisations.</div>
+    </main>
+    <footer>
+        <section class="disclaim">
+            <div class="copyright">© <span id="year"></span> Yie JT. All rights reserved.</div>
+            <a href="./disclaimer.html" class="disclaimer">Disclaimer</a>
+            <a href="" class="privacy-policy">Privacy Policy</a>
+        </section>
+    </footer>
+
+    <script src="./JavaScript/js.js"></script>
+</body>
+</html>

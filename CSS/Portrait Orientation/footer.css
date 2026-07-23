@@ -1,0 +1,8 @@
+@media (max-width:600px){
+    .disclaim{
+        flex-direction: column;
+        align-items: center;
+
+        padding:10% 0;
+    }
+}
