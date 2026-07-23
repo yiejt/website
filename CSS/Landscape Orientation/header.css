@@ -74,6 +74,7 @@
 
     .triangle {
         position:absolute;
+        z-index:6;
         
         top: var(--header-height);
         height: 25px;
@@ -98,6 +99,7 @@
 
     .red-dot-content{
         position: absolute;
+        z-index:6;
 
         top: calc(var(--header-height) + 27px);
         right:30px;
