@@ -13,7 +13,7 @@ body{
 }
 
 .developing-box{
-    position:fixed;
+    position:absolute;
     z-index:6;
 
     left:50%;

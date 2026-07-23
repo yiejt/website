@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="./CSS/style.css">
 
     <link rel="stylesheet" href="./CSS/PC/header.css">
+    <link rel="stylesheet" href="./CSS/PC/main.css">
     <link rel="stylesheet" href="./CSS/PC/footer.css">
 
     <link rel="stylesheet" href="./CSS/Landscape Orientation/header.css">
+    <link rel="stylesheet" href="./CSS/Landscape Orientation/main.css">
 
     <link rel="stylesheet" href="./CSS/Portrait Orientation/header.css">
+    <link rel="stylesheet" href="./CSS/Portrait Orientation/main.css">
     <link rel="stylesheet" href="./CSS/Portrait Orientation/footer.css">
 
     <link rel="icon" href="./Pictures/website-icon.png">
@@ -31,12 +34,11 @@
 
             height:fit-content;
             width:100%;
-            padding:5% 0;
+            padding: calc(var(--header-height) * 2) 0;
             background-color: white;
         }
 
         .Disclaimer{
-            margin-top: calc(var(--header-height) * 1);
             width:80%;
             border-bottom:3px solid #131b39;
 
@@ -81,15 +83,14 @@
         .redirect-homepage{
             height:fit-content;
             width: fit-content;
-            margin-top: 5%;
-            padding:1% 2%;
+            padding:2% 5%;
             background-color: white;
             border:2px solid #131b39;
-            border-radius: 2cap;
+            border-radius: 1cap;
 
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 1rem;
+            font-size: 1.5rem;
             color:#131b39;
 
             transition-duration: 0.3s;
@@ -118,7 +119,11 @@
                 width:90%;
 
                 font-size: 1rem;
-            }   
+            }
+
+            .redirect-homepage{
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -160,11 +165,9 @@
                 <a href="" class="burger-nav-p developing">Blog</a>
                 <a href="" class="burger-nav-p developing">Research</a>
                 <a href="" class="burger-nav-p developing">CV</a>
-                <a href="#footer" class="burger-nav-p">Contact</a>
-
+                <a href="#footer" class="burger-nav-p Contact">Contact</a>
             </div>
         </section>
-    </header>
     </header>
 
     <main>
@@ -185,7 +188,10 @@
         <br>
         <div class="Disclaimer-h">Personal opinions</div>
         <div class="Disclaimer-p">The views and opinions expressed on this website are my own and do not represent the views of my university, employers, or any affiliated organisations.</div>
-
+        <br>
+        <br>       
+        <br>        
+        <br>        
         <a href="https://yiejt.github.io/website/" class="redirect-homepage reveal">Back to Homepage</a>
     </main>
     <footer id="footer">
