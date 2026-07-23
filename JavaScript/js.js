@@ -16,14 +16,12 @@ developingButtons.forEach(button => {
 
 
 //Contact Redirect
-document.querySelector(".contact, .Contact").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.getElementById("footer").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-
+document.querySelectorAll(".contact, .Contact").forEach(el => 
+    el.addEventListener("click", e => {
+        e.preventDefault();
+        document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+    })
+);
 
 //Portrait Red-Dot
 const red_dot = document.querySelector(".collapsed-red-dot");
