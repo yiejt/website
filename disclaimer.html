@@ -38,6 +38,7 @@
         .Disclaimer{
             margin-top: calc(var(--header-height) * 1);
             width:80%;
+            border-bottom:3px solid #131b39;
 
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 4rem;
@@ -53,7 +54,7 @@
             width:70%;
             padding:1% 0 0;
 
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family:  "Roboto", sans-serif;
             font-size: 2rem;
             font-weight: bold;
             color:black;
@@ -67,7 +68,7 @@
             width:70%;
             padding:1% 0 0;
 
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: "Open Sans", sans-serif;
             font-size: 1rem;
             text-align: justify;
             color:black;
@@ -75,6 +76,29 @@
             opacity:0;
             animation: fadeIn 0.5s ease forwards;
             animation-delay:0.5s;
+        }
+
+        .redirect-homepage{
+            height:fit-content;
+            width: fit-content;
+            margin-top: 5%;
+            padding:1% 2%;
+            background-color: white;
+            border:2px solid #131b39;
+            border-radius: 2cap;
+
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            color:#131b39;
+
+            transition-duration: 0.3s;
+        }
+
+        .redirect-homepage:hover{
+            background-color: #131b39;
+
+            color:white
         }
 
         @media (max-width:1000px){
@@ -143,26 +167,28 @@
         <div class="Disclaimer">Disclaimer</div>
         <br>
         <br>
-        <div class="Disclaimer-h">A. Educational Purpose</div>
+        <div class="Disclaimer-h">Educational Purpose</div>
         <div class="Disclaimer-p">The information provided on this website is intended for educational and informational purposes only. It reflects my personal learning journey, interests, and opinions.</div>
         <br>
         <br>
-        <div class="Disclaimer-h">B. Not professional advice</div>
+        <div class="Disclaimer-h">Not professional advice</div>
         <div class="Disclaimer-p">The content on this website does not constitute professional medical, scientific, legal, or financial advice. Readers should consult qualified professionals for specific advice.</div>
         <br>
         <br>
-        <div class="Disclaimer-h">C. Accuracy</div>
+        <div class="Disclaimer-h">Accuracy</div>
         <div class="Disclaimer-p">While I make reasonable efforts to ensure that the information presented is accurate and up to date, I cannot guarantee that all information is complete, accurate, or error-free.</div>
         <br>
         <br>
-        <div class="Disclaimer-h">D. Personal opinions</div>
+        <div class="Disclaimer-h">Personal opinions</div>
         <div class="Disclaimer-p">The views and opinions expressed on this website are my own and do not represent the views of my university, employers, or any affiliated organisations.</div>
+
+        <a href="" class="redirect-homepage reveal">Back to Homepage</a>
     </main>
     <footer>
         <section class="disclaim">
             <div class="copyright">© <span id="year"></span> Yie JT. All rights reserved.</div>
             <a href="./disclaimer.html" class="disclaimer">Disclaimer</a>
-            <a href="" class="privacy-policy">Privacy Policy</a>
+            <a href="https://yiejt.github.io/website/" class="privacy-policy">Privacy Policy</a>
         </section>
     </footer>
 
