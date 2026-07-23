@@ -13,13 +13,14 @@ body{
 }
 
 .developing-box{
-    position:absolute;
+    position:fixed;
     z-index:6;
 
     left:50%;
     bottom:10%;
     height:fit-content;
-    width:75%;
+    width:fit-content;
+    max-width:75%;
     background:#222;
     border-radius:1cap;
     padding:20px 35px;
