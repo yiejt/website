@@ -20,15 +20,16 @@ footer{
     background-color: black;
 }
 
-.copyright{
+.copy-right{
     margin:3%;
 
     font-family: Arial, Helvetica, sans-serif;
     color:white
 }
 
+.privacy-policy,
 .disclaimer,
-.privacy-policy{
+.copyright{
     margin:3%;
     padding:1%;
     border-bottom:2px solid black;
@@ -40,7 +41,8 @@ footer{
     transition-duration: 0.3s;
 }
 
+.privacy-policy:hover,
 .disclaimer:hover,
-.privacy-policy:hover{
+.copyright:hover{
     border-bottom:2px solid white
 }
