@@ -30,6 +30,14 @@ header{
     display:flex;
     justify-content: start;
     align-items: center;
+
+    text-decoration: none;
+
+    transition-duration: 0.3s;
+}
+
+.alert-bar:hover{
+    opacity:0.8
 }
 
 .red-dot{
