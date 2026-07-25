@@ -6,11 +6,13 @@ async function loadComponent(id, file){
 
     if(id === "header"){
         initDevelopingBox();
+        contactRedirect();
         portraitRedDot();
         portraitNavigationPane();
         updateHeaderHeight();
         contentAppearGradually();
         homepageBackgroundScroll();
+        year();
 
     }
 }
@@ -40,12 +42,14 @@ function initDevelopingBox(){
 
 
 //Contact Redirect
-document.querySelectorAll(".contact, .Contact").forEach(el => 
-    el.addEventListener("click", e => {
-        e.preventDefault();
-        document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
-    })
-);
+function contactRedirect(){
+    document.querySelectorAll(".contact, .Contact").forEach(el => 
+        el.addEventListener("click", e => {
+            e.preventDefault();
+            document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+        })
+    );
+}
 
 
 //Portrait Red-Dot
@@ -161,4 +165,6 @@ function contentAppearGradually() {
 
 
 //Year
-document.getElementById("year").textContent = new Date().getFullYear();
+function year() {
+    document.getElementById("year").textContent = new Date().getFullYear();
+}
