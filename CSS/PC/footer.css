@@ -29,7 +29,8 @@ footer{
 
 .privacy-policy,
 .disclaimer,
-.copyright{
+.copyright,
+.credits{
     margin:3%;
     padding:1%;
     border-bottom:2px solid black;
@@ -43,6 +44,7 @@ footer{
 
 .privacy-policy:hover,
 .disclaimer:hover,
-.copyright:hover{
+.copyright:hover,
+.credits:hover{
     border-bottom:2px solid white
 }

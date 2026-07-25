@@ -1,18 +1,37 @@
+async function loadComponent(id, file){
+    const element = document.getElementById(id);
+
+    const response = await fetch(file);
+    element.innerHTML = await response.text();
+
+    if(id === "header"){
+        updateHeaderHeight();
+        initDevelopingBox();
+    }
+}
+
+loadComponent("header","components/header.html");
+loadComponent("footer","components/footer.html");
+
+
 //Developing
-const developingBox = document.getElementById("developingBox");
-const developingButtons = document.querySelectorAll(".developing");
+function initDevelopingBox(){
 
-developingButtons.forEach(button => {
-    button.addEventListener("click", function(e){
-        e.preventDefault();
+    const developingBox = document.querySelector(".developing-box");
+    const developingButtons = document.querySelectorAll(".developing");
 
-        developingBox.classList.add("show");
+    developingButtons.forEach(button => {
+        button.addEventListener("click", function(e){
+            e.preventDefault();
 
-        setTimeout(()=>{
-            developingBox.classList.remove("show");
-        },3000);
+            developingBox.classList.add("show");
+
+            setTimeout(()=>{
+                developingBox.classList.remove("show");
+            },3000);
+        });
     });
-});
+}
 
 
 //Contact Redirect
@@ -76,9 +95,11 @@ contact.addEventListener("click", () => {
 
 
 //Header Height
-const header = document.querySelector("header");
-
 function updateHeaderHeight() {
+    const header = document.querySelector("header");
+
+    if (!header) return;
+
     const height = header.getBoundingClientRect().height;
 
     document.documentElement.style.setProperty(
@@ -88,8 +109,6 @@ function updateHeaderHeight() {
 
     console.log(height);
 }
-
-updateHeaderHeight();
 
 window.addEventListener("resize", updateHeaderHeight);
 
