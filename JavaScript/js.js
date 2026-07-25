@@ -10,8 +10,8 @@ async function loadComponent(id, file){
     }
 }
 
-loadComponent("header","Components/header.html");
-loadComponent("footer","Components/footer.html");
+loadComponent("header","./Components/header.html");
+loadComponent("footer","./Components/footer.html");
 
 
 //Developing
