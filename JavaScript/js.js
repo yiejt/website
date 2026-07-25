@@ -5,9 +5,13 @@ async function loadComponent(id, file){
     element.innerHTML = await response.text();
 
     if(id === "header"){
-        updateHeaderHeight();
         initDevelopingBox();
         portraitRedDot();
+        portraitNavigationPane();
+        updateHeaderHeight();
+        contentAppearGradually();
+        homepageBackgroundScroll();
+
     }
 }
 
@@ -71,36 +75,38 @@ function portraitRedDot(){
 }
 
 //Portrait Navigation Pane
+function portraitNavigationPane() {
+    const burger = document.querySelector(".burger");
+    const burger_content = document.querySelector(".burger-nav")
+    const contact = document.querySelector(".Contact")
 
-const burger = document.querySelector(".burger");
-const burger_content = document.querySelector(".burger-nav")
-const contact = document.querySelector(".Contact")
+    burger.addEventListener("click", () => {
+        burger.textContent =
+            burger.textContent === "menu" ? "close" : "menu";
+            
+        if (burger_content.classList.contains('show')) {
+            burger_content.classList.remove('show');
+        } else {
+            burger_content.classList.add('show');
+        }
+    });
 
-burger.addEventListener("click", () => {
-    burger.textContent =
-        burger.textContent === "menu" ? "close" : "menu";
-        
-    if (burger_content.classList.contains('show')) {
-        burger_content.classList.remove('show');
-    } else {
-        burger_content.classList.add('show');
-    }
-});
-
-contact.addEventListener("click", () => {
-    burger.textContent =
-        burger.textContent === "menu" ? "close" : "menu";
-        
-    if (burger_content.classList.contains('show')) {
-        burger_content.classList.remove('show');
-    } else {
-        burger_content.classList.add('show');
-    }
-});
+    contact.addEventListener("click", () => {
+        burger.textContent =
+            burger.textContent === "menu" ? "close" : "menu";
+            
+        if (burger_content.classList.contains('show')) {
+            burger_content.classList.remove('show');
+        } else {
+            burger_content.classList.add('show');
+        }
+    });
+}
 
 
 //Header Height
 function updateHeaderHeight() {
+
     const header = document.querySelector("header");
 
     if (!header) return;
@@ -119,34 +125,39 @@ window.addEventListener("resize", updateHeaderHeight);
 
 
 //Homepage background scroll
-const homepageImg =
-document.querySelector(".homepage-img");
+function homepageBackgroundScroll() {
 
-window.addEventListener("scroll",()=>{
+    const homepageImg =
+    document.querySelector(".homepage-img");
 
-    const scroll =
-    window.scrollY;
+    window.addEventListener("scroll",()=>{
 
-    homepageImg.style.transform =
-    `translateY(${scroll * 0.5}px)`;
+        const scroll =
+        window.scrollY;
 
-});
+        homepageImg.style.transform =
+        `translateY(${scroll * 0.5}px)`;
 
+    });
+}
 
 //Content Appear Gradually
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-    });
-}, {
-    threshold: 0.2
-});
+function contentAppearGradually() {
 
-document.querySelectorAll(".reveal").forEach(element => {
-    observer.observe(element);
-});
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    document.querySelectorAll(".reveal").forEach(element => {
+        observer.observe(element);
+    });
+}
 
 
 //Year
