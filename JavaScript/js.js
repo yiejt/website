@@ -7,6 +7,7 @@ async function loadComponent(id, file){
     if(id === "header"){
         updateHeaderHeight();
         initDevelopingBox();
+        portraitRedDot();
     }
 }
 
@@ -42,31 +43,35 @@ document.querySelectorAll(".contact, .Contact").forEach(el =>
     })
 );
 
+
 //Portrait Red-Dot
-const red_dot = document.querySelector(".collapsed-red-dot");
-const triangle = document.querySelector(".triangle");
-const red_dot_content = document.querySelector(".red-dot-content");
+function portraitRedDot(){
 
-document.addEventListener("click", function(){
-    triangle.classList.remove("show");
-    red_dot_content.classList.remove("show");
-});
+    const red_dot = document.querySelector(".collapsed-red-dot");
+    const triangle = document.querySelector(".triangle");
+    const red_dot_content = document.querySelector(".red-dot-content");
 
-red_dot.addEventListener("click", function(e){
-    e.stopPropagation(); 
-    triangle.classList.toggle("show");
-    red_dot_content.classList.toggle("show");
-});
+    document.addEventListener("click", function(){
+        triangle.classList.remove("show");
+        red_dot_content.classList.remove("show");
+    });
 
-red_dot_content.addEventListener("click", function(e){
-    e.stopPropagation(); 
-});
-triangle.addEventListener("click", function(e){
-    e.stopPropagation(); 
-});
+    red_dot.addEventListener("click", function(e){
+        e.stopPropagation(); 
+        triangle.classList.toggle("show");
+        red_dot_content.classList.toggle("show");
+    });
 
+    red_dot_content.addEventListener("click", function(e){
+        e.stopPropagation(); 
+    });
+    triangle.addEventListener("click", function(e){
+        e.stopPropagation(); 
+    });
+}
 
 //Portrait Navigation Pane
+
 const burger = document.querySelector(".burger");
 const burger_content = document.querySelector(".burger-nav")
 const contact = document.querySelector(".Contact")
